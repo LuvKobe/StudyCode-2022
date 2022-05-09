@@ -123,6 +123,7 @@ int main()
 
 
 //二分
+/*
 int main()
 {
 	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
@@ -147,5 +148,30 @@ int main()
 			break;
 		}
 	}
+	return 0;
+}
+*/
+
+#include <string.h>
+#include <windows.h>
+int main()
+{
+	char arr1[] = "hello world!!!";
+	char arr2[] = "##############";
+
+	int left = 0;
+	int right = strlen(arr1) - 1;
+
+	while (left <= right)
+	{
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		printf("%s\n", arr2);
+		Sleep(1000); //睡眠函数
+		system("cls"); //执行系统命令
+		left++;
+		right--;
+	}
+	printf("%s\n", arr2);
 	return 0;
 }
