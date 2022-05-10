@@ -1,4 +1,4 @@
-1、字符串的结束标志是：（ C ）
+### 1、字符串的结束标志是：（  ）
 
 A.是'0'
 
@@ -8,7 +8,7 @@ C. 是'\0'
 
 D.是空格
 
-解析：
+**🌟解析：**
 
 ```
 
@@ -25,9 +25,7 @@ D：明显错误
 因此：选择C
 ```
 
-
-
-2、下面代码的结果是：（ C ）
+### 2、下面代码的结果是：（  ）
 
 ```c
 #include <stdio.h>
@@ -49,7 +47,7 @@ C.随机值
 
 D.5
 
-解析：
+**🌟解析：**
 
 ```
 strlen是用来获取字符串的有效长度的，结尾标记'\0'不包含在内。
@@ -61,9 +59,7 @@ strlen获取的规则非常简单：从前往后依次检测，直到遇到'\0'�
 因此：答案选C
 ```
 
-
-
-3、下面那个不是转义字符？（ C ）
+### 3、下面那个不是转义字符？（  ）
 
 A.'\n'
 
@@ -73,7 +69,7 @@ C.'\q'
 
 D.'\b'
 
-解析：
+**🌟解析：**
 
 ```
 A：'\n' 转义字符，代表换行
@@ -87,9 +83,7 @@ D：'\b' 转义字符，表示退格
 因此：选择C
 ```
 
-
-
-4、下面程序的结果是:（ A ）
+### 4、下面程序的结果是:（  ）
 
 ```c
 #include <stdio.h>
@@ -110,7 +104,7 @@ C.9
 
 D.10
 
-解析：
+**解析：**
 
 ```
 strlen：获取字符串的有效长度，不包括'\0'
@@ -123,15 +117,15 @@ strlen：获取字符串的有效长度，不包括'\0'
 
 
 
-5、编程题：[小飞机](https://www.nowcoder.com/practice/5cd9598f28f74521805d2069ce4a108a?tpId=107&&tqId=33287&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 5、编程题：[小飞机](https://www.nowcoder.com/practice/5cd9598f28f74521805d2069ce4a108a?tpId=107&&tqId=33287&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-6、编程题：[被5整除问题](https://www.nowcoder.com/practice/a4f527b043c04551bf4b80b4275a53bd?tpId=107&&tqId=33364&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 6、编程题：[被5整除问题](https://www.nowcoder.com/practice/a4f527b043c04551bf4b80b4275a53bd?tpId=107&&tqId=33364&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-7、编程题：[发布信息](https://www.nowcoder.com/practice/20e59d0f388448c68f581b9d3ca66049?tpId=107&&tqId=33312&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 7、编程题：[发布信息](https://www.nowcoder.com/practice/20e59d0f388448c68f581b9d3ca66049?tpId=107&&tqId=33312&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 

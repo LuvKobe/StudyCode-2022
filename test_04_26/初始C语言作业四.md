@@ -1,4 +1,4 @@
-1、关于指针说法正确的是：（ B ）
+### 1、关于指针说法正确的是：（  ）
 
 A.sizeof(char*)大小一定是1
 
@@ -8,7 +8,7 @@ C.指针变量的大小都是4个字节
 
 D.指针不是变量
 
-解析：
+**🌟解析：**
 
 ```
  A：错误，指针是一种复合数据类型，指针变量内容是一个地址，因此一个指针可以表示该系统的整个地址集合，
@@ -26,7 +26,7 @@ D.指针不是变量
 
 
 
-2、关于static说法不正确的是：（ C ）
+### 2、关于static说法不正确的是：（  ）
 
 A.static可以修饰局部变量
 
@@ -36,7 +36,7 @@ C.static修饰的变量不能改变
 
 D.static可以修饰函数
 
-解析：
+**🌟解析：**
 
 ```
 本题主要考察static的特性
@@ -79,7 +79,7 @@ D.static可以修饰函数
 
 
 
-3、下面代码的结果是什么？（ B ）
+### 3、下面代码的结果是什么？（  ）
 
 ```c
 #include <stdio.h>
@@ -111,7 +111,7 @@ C.10，12，14，16，18
 
 D.12，14，16，18，20
 
-解析：
+**🌟解析：**
 
 ```
   本题主要考察static修饰局部变量的特性，static修饰局部变量，该变量不会随函数的结束而消失，并且只在第一次调用时进行初始化，后序调用该函数时，使用的都是上次结束前该变量的值。
@@ -131,20 +131,20 @@ D.12，14，16，18，20
 
 
 
-4、[计算y的值](https://www.nowcoder.com/practice/61a0f16117484d219b59c62224b33b1c?tpId=107&&tqId=33365&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 4、[计算y的值](https://www.nowcoder.com/practice/61a0f16117484d219b59c62224b33b1c?tpId=107&&tqId=33365&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-5、[时间转换](https://www.nowcoder.com/practice/c4ae7bcac7f9491b8be82ee516a94899?tpId=107&&tqId=33304&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 5、[时间转换](https://www.nowcoder.com/practice/c4ae7bcac7f9491b8be82ee516a94899?tpId=107&&tqId=33304&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-6、[计算平均成绩](https://www.nowcoder.com/practice/30a28eb88c3f4e87be1a5b397ddd6fe2?tpId=107&&tqId=33314&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 6、[计算平均成绩](https://www.nowcoder.com/practice/30a28eb88c3f4e87be1a5b397ddd6fe2?tpId=107&&tqId=33314&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-7、[输出学生信息](https://www.nowcoder.com/practice/8e94458049eb4e838f711bbd1be0045e?tpId=107&&tqId=33313&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 7、[输出学生信息](https://www.nowcoder.com/practice/8e94458049eb4e838f711bbd1be0045e?tpId=107&&tqId=33313&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
 
 
 
-8、[反向输出一个四位数](https://www.nowcoder.com/practice/1f7c1d67446e4361bf4af67c08e0b8b0?tpId=107&&tqId=33300&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
+### 8、[反向输出一个四位数](https://www.nowcoder.com/practice/1f7c1d67446e4361bf4af67c08e0b8b0?tpId=107&&tqId=33300&rp=1&ru=/ta/beginner-programmers&qru=/ta/beginner-programmers/question-ranking)
