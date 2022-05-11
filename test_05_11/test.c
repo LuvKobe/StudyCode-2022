@@ -126,3 +126,97 @@ int main()
 	return 0;
 }
 */
+
+//素数返回1，不是素数返回0
+/*
+#include <math.h>
+int is_prime(int n) {
+	int i = 0;
+	for (i = 2; i < n; i++) {
+		if (n % i == 0) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+	int ret = is_prime(n);
+	if (1 == ret) {
+		printf("%d是素数\n", n);
+	}
+	else {
+		printf("%d不是素数\n", n);
+	}
+	return 0;
+}
+*/
+
+/*
+int is_leap_year(int y) {
+	if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+		return 1;
+	else
+		return 0;
+}
+
+int main()
+{
+	int year = 0;
+	scanf("%d", &year);
+	int ret = is_leap_year(year);
+
+	if (1 == ret) {
+		printf("%d是闰年\n", year);
+	}
+	else {
+		printf("%d不是闰年\n", year);
+	}
+	return 0;
+}
+*/
+
+/*
+void Swap(int* pa, int* pb) {
+	int t = 0;
+	t = *pa;
+	*pa = *pb;
+	*pb = t;
+}
+
+int main()
+{
+	int a, b;
+	printf("请输入两个整数: ");
+	scanf("%d %d", &a, &b);
+
+	printf("交换前：a=%d b=%d\n", a, b);
+	Swap(&a, &b);
+	printf("交换后：a=%d b=%d\n", a, b);
+
+	return 0;
+}
+*/
+
+void PrintMulTable(int n) {
+	int i = 0;
+	int j = 0;
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= i; j++) {
+			printf("%dx%d=%2d ", i, j, (i * j));
+		}
+		printf("\n");
+	}
+}
+
+int main()
+{
+	int n = 0;
+	printf("请输入(输入9，输出9x9口诀表)：");
+	scanf("%d", &n);
+	PrintMulTable(n);
+	return 0;
+}
