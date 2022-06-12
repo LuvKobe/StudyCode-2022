@@ -177,6 +177,7 @@ int main()
 */
 
 // ·½·¨Èı
+/*
 int main()
 {
 	char v[] = { 'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U' };
@@ -198,3 +199,47 @@ int main()
 	return 0;
 }
 
+*/
+
+/*
+struct Stu
+{
+	char name[20];
+	int age;
+	float score;
+}s1, s2;
+
+int main()
+{
+	struct Stu s = { "ÌÆÍñæÃ", 18, 25.4f };
+	printf("%s %d %.1f\n", s.name, s.age, s.score);
+	return 0;
+}
+*/
+
+
+/*
+struct S
+{
+	int arr[100];
+	float f;
+	char ch[1000];
+};
+
+void print(struct S* s) {
+	int i = 0;
+	for (i = 0; i < 10; i++) {
+		printf("%d ", s->arr[i]);
+	}
+	printf("\n");
+	printf("%.2f\n", s->f);
+	printf("%s\n", s->ch);
+}
+
+int main()
+{
+	struct S s = { {1,2,3,4,5,6,7,8,9,10}, 10.25f, "hello world" };
+	print(&s);
+	return 0;
+}
+*/
