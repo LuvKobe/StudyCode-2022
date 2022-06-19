@@ -38,16 +38,19 @@
 #### 7. 初始结构体
 
 - 🥐  博客链接：
-- 📝 刷题链接：
+- 📝 刷题链接：[初阶结构体作业](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_14/初阶结构体作业.md)
 
 #### 8. 实用调试技巧
 
 - 🥐  博客链接：
-- 📝 刷题链接：
+- 📝 刷题链接：[调试技巧作业](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_15/调试技巧作业.md)
 
 # 🌭 C 语言重点突破
 
 #### 1. 数据类型存储原理
+
+- 🥐  博客链接：
+- 📝 刷题链接：[数据的存储作业一](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_15/数据的存储作业一.md)
 
 #### 2. 指针的进阶
 
