@@ -45,6 +45,10 @@
 - 🥐  博客链接：
 - 📝 刷题链接：[调试技巧作业](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_15/调试技巧作业.md)
 
+#### 9. C语言OJ训练
+
+- 📝 刷题链接：[C语言OJ作业一](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_29/C语言OJ作业一.md)、[C语言OJ作业二](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_29/C语言OJ作业二.md)
+
 # 🌭 C 语言重点突破
 
 #### 1. 数据类型存储原理
@@ -53,6 +57,9 @@
 - 📝 刷题链接：[数据的存储作业一](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_15/数据的存储作业一.md)、[数据的存储作业二](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_20/数据的存储作业二.md)
 
 #### 2. 指针的进阶
+
+- 🥐  博客链接：
+- 📝 刷题链接：[指针的进阶作业一](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_30/指针的进阶作业一.md)、[指针的进阶作业二](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_30/指针的进阶作业二.md)、[指针的进阶作业三](https://github.com/LuvKobe/StudyCode-2022/blob/main/test_06_30/指针的进阶作业三.md)
 
 #### 3. 字符串和内存函数的介绍
 
