@@ -51,21 +51,33 @@
 // 2. µİ¹é
 // 3. Ö¸Õë - Ö¸Õë
 
-#include <assert.h>
+//#include <assert.h>
+//
+//int my_strlen(char* str) {
+//	assert(str);
+//	int cnt = 0;
+//	while (*str) {
+//		cnt++;
+//		str++;
+//	}
+//	return cnt;
+//}
+//
+//int main()
+//{
+//	int len = my_strlen("hello");
+//	printf("%d\n", len);
+//	return 0;
+//}
 
-int my_strlen(char* str) {
-	assert(str);
-	int cnt = 0;
-	while (*str) {
-		cnt++;
-		str++;
-	}
-	return cnt;
-}
 
+//strcpy
+#include <string.h>
 int main()
 {
-	int len = my_strlen("hello");
-	printf("%d\n", len);
+	char str1[] = "abcdef";
+	char str2[20] = { 0 };
+	strcpy(str2, str1);
+	printf("%s\n", str2);
 	return 0;
 }
