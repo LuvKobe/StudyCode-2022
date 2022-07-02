@@ -193,3 +193,120 @@
 //	printf("%d\n", ret);
 //	return 0;
 //}
+
+// strstr：字符串查找，在 dest 里面找 src 的字串，返回字串的起始地址
+//char* my_strstr(const char* str, const char* substr)
+//{
+//	const char* s1 = str;
+//	const char* s2 = substr;
+//	const char* cur = str;
+//	assert(str && substr);
+//	if (*substr == '\0') {
+//		return (char*)str;
+//	}
+//
+//	while (*cur)
+//	{
+//		s1 = cur;
+//		s2 = substr;
+//		while ((*s1 != '\0') && (*s2 != '\0') && (*s1 == *s2)) {
+//			s1++;
+//			s2++;
+//		}
+//		if (*s2 == '\0')
+//			return (char*)cur;//找到了
+//		cur++;
+//	}
+//	return NULL; //找不到
+//}
+//
+//int main()
+//{
+//	char str1[] = "abcdabc";
+//	char str2[] = "bcd";
+//
+//	char* ret = my_strstr(str1, str2);
+//	if (NULL == ret)
+//		printf("找不到\n");
+//	else
+//		printf("%s\n", ret);
+//	return 0;
+//}
+
+
+// strtok函数：
+// 方法一
+//int main()
+//{
+//	const char* p = "@.";
+//	char arr[] = "chenghu@email.cn";
+//	char buf[50] = { 0 }; //"chenghu@email.cn"
+//	strcpy(buf, arr);
+//
+//	char* str = strtok(buf, p); // chenghu
+//	printf("%s\n", str);
+//
+//	str = strtok(NULL, p); // email
+//	printf("%s\n", str);
+//
+//	str = strtok(NULL, p); // cn
+//	printf("%s\n", str);
+//	return 0;
+//}
+
+//方法二
+//int main()
+//{
+//	const char* p = "@.";
+//	char arr[] = "edison@gmail.com";
+//	char buf[50] = { 0 }; //"chenghu@email.cn"
+//	strcpy(buf, arr);
+//	char* str = NULL;
+//
+//	for (str = strtok(buf, p); str != NULL; str = strtok(NULL, p)) {
+//		printf("%s\n", str);
+//	}
+//	
+//	return 0;
+//}
+
+
+
+// strerror：返回错误码所对应的错误信息
+
+//int main()
+//{
+//	int i = 0;
+//	for (i = 0; i < 10; i++) {
+//		printf("%s\n", strerror(i));
+//	}
+//	return 0;
+//}
+
+//#include <errno.h>
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "r"); // 打开文件
+//	if (NULL == pf) {
+//		//出错误的原因是什么？
+//		printf("%s\n", strerror(errno));
+//		return 0;
+//	}
+//	//读文件
+//	//关闭文件
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
+
+//#include <ctype.h>
+//
+//int main()
+//{
+//	printf("%d\n", isspace('!'));
+//	return 0;
+//}
+
+
