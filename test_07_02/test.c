@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
+#include <assert.h>
 
 //int find_max_nums(int* nums, int sz) {
 //	int sum = 0; //用于存储最大和
@@ -71,13 +72,55 @@
 //}
 
 
-//strcpy
-#include <string.h>
+//strcpy的模拟实现：字符串拷贝
+
+//
+//char* my_strcpy(char* dest, const char* src) {
+//	char* left = dest;
+//	assert(dest && src);
+//	while (*src) {
+//		*dest = *src;
+//		dest++;
+//		src++;
+//	}
+//	*dest = *src;
+//	return left;
+//}
+//
+//int main()
+//{
+//	char str1[] = "abcdef";
+//	char str2[20] = { 0 };
+//	my_strcpy(str2, str1);
+//	printf("%s\n", str2);
+//	return 0;
+//}
+
+
+
+// strcat的模拟实现：追加字符串
+
+char* my_strcat(char* dest, const char* src) {
+	char* left = dest;
+	assert(dest && src);
+	//1. 找到目标空间中的 '\0'
+	while (*dest) {
+		dest++;
+	}
+
+	//2. 追加内容到目标空间
+	while (*dest++ = *src++) {
+		;
+	}
+
+	return left;
+
+}
+
 int main()
 {
-	char str1[] = "abcdef";
-	char str2[20] = { 0 };
-	strcpy(str2, str1);
-	printf("%s\n", str2);
-	return 0;
+	char str1[20] = "hello";
+	char str2[20] = "world";
+	my_strcat(str1, str2);
+	printf("%s\n", str1);
 }
