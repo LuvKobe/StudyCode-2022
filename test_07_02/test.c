@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
 
 //int find_max_nums(int* nums, int sz) {
 //	int sum = 0; //用于存储最大和
@@ -100,27 +101,95 @@
 
 // strcat的模拟实现：追加字符串
 
-char* my_strcat(char* dest, const char* src) {
-	char* left = dest;
-	assert(dest && src);
-	//1. 找到目标空间中的 '\0'
-	while (*dest) {
-		dest++;
-	}
+//char* my_strcat(char* dest, const char* src) {
+//	char* left = dest;
+//	assert(dest && src);
+//	//1. 找到目标空间中的 '\0'
+//	while (*dest) {
+//		dest++;
+//	}
+//
+//	//2. 追加内容到目标空间
+//	while (*dest++ = *src++) {
+//		;
+//	}
+//
+//	return left;
+//
+//}
+//
+//int main()
+//{
+//	char str1[20] = "hello";
+//	char str2[20] = "world";
+//	my_strcat(str1, str2);
+//	printf("%s\n", str1);
+//}
 
-	//2. 追加内容到目标空间
-	while (*dest++ = *src++) {
-		;
-	}
 
-	return left;
+// strcmp的模拟实现：字符串比较
+//
+//int my_strcmp(const char* str1, const char* str2) {
+//	assert(str1 && str2); // 断言，判断是不是空指针
+//	while (*str1 == *str2) {
+//		//相等
+//		if (*str1 == '\0')
+//			return 0;
+//		str1++;
+//		str2++;
+//	}
+//	//大于
+//
+//	//写法一：
+//	if (*str1 > *str2) {
+//		return 1;
+//	}
+//	else {
+//		return -1;
+//	}
+//
+//	//写法二
+//	return *str1 - *str2;
+//}
+//
+//int main()
+//{
+//	char str1[] = "abcdef";
+//	char str2[] = "cdefgh";
+//
+//	int ret = my_strcmp(str1, str2);
+//	printf("%d\n", ret);
+//
+//	return 0;
+//}
 
-}
 
-int main()
-{
-	char str1[20] = "hello";
-	char str2[20] = "world";
-	my_strcat(str1, str2);
-	printf("%s\n", str1);
-}
+// strncpy：限制拷贝的长度
+
+//int main()
+//{
+//	char str1[] = "xxxxxxxxxxxxxxxxxxx";
+//	char str2[] = "helloworld";
+//	strncpy(str1, str2, 5);
+//	printf("%s\n", str1);
+//}
+
+// strncat：限制追加的长度
+//int main()
+//{
+//	char str1[20] = "hello";
+//	char str2[] = "world";
+//	strncat(str1, str2, 3);
+//	printf("%s\n", str1);
+//	return 0;
+//}
+
+// strncmp：限制比较的长度
+//int main()
+//{
+//	char str1[] = "abcdef";
+//	char str2[] = "abcqqqqqq";
+//	int ret = strncmp(str1, str2, 4); // 比较前 4 个
+//	printf("%d\n", ret);
+//	return 0;
+//}
