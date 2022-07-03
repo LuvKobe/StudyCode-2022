@@ -1,152 +1,108 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
-#include <assert.h>
+#include <stdlib.h>
+#include <errno.h>
 #include <string.h>
 
-//int find_max_nums(int* nums, int sz) {
-//	int sum = 0; //用于存储最大和
-//	int max = 0; //最大的数
-//	int minus = nums[0]; 
-//	int flag = 1;
-//	int i = 0;
-//	for (i = 0; i < sz; i++) {
-//		if ((minus < 0) && (minus < nums[i]) && (nums[i] < 0)) {
-//			minus = nums[i]; //找到最大的负数
-//		}
-//		if (nums[i] >= 0) {
-//			flag = 0;
-//			break;
-//		}
-//	}
-//
-//	if (1 == flag) {
-//		return minus;
-//	}
-//
-//	for (i = 0; i < sz; i++) {
-//		if (sum + nums[i] < 0) {
-//			sum = 0;
-//		}
-//		else {
-//			sum += nums[i];
-//			if (max < sum) {
-//				max = sum;
-//			}
-//		}
-//	}
-//	return max;
+//int check_sys() {
+//	union
+//	{
+//		char c;
+//		int i;
+//	}u;
+//	u.i = 1;
+//	return u.c;
 //}
-//
 //int main()
 //{
-//	int nums[2] = { -1, 0 };
-//	int sz = sizeof(nums) / sizeof(nums[0]);
-//	int ret = find_max_nums(nums, sz);
-//	printf("%d\n", ret);
-//	return 0;
-//}
-
-
-// memset
-// memcmp
-
-// memcpy：拷贝
-
-//int main()
-//{
-//	int arr1[] = { 1,2,3,4,5,6,7,8,9,10 };
-//	int arr2[5] = { 0 };
-//	memcpy(arr2, arr1, 20); //拷贝前5个数，每个是int类型，所以是20个字节
-//	for (int i = 0; i < 5; i++) {
-//		printf("%d ", arr2[i]);
-//	}
-//	return 0;
-//}
-
-// size_t 可以理解为 unsigned int
-//void* my_memcpy(void* dest, const void* src, size_t num) {
-//	void* ret = dest;
-//	assert(dest && src);
-//	while (num--) {
-//		*(char*)dest = *(char*)src;
-//		dest = (char*)dest + 1;
-//		src = (char*)src + 1;
-//	}
-//	return ret;
-//}
-//
-//int main()
-//{
-//	int arr1[] = { 1,2,3,4,5,6,7,8,9,10 };
-//	int arr2[5] = { 0 };
-//
-//	my_memcpy(arr2, arr1, 5*sizeof(arr1[0])); //拷贝前5个数，每个是int类型，所以是20个字节
-//	
-//	for (int i = 0; i < 5; i++) {
-//		printf("%d ", arr2[i]);
-//	}
-//
-//	return 0;
-//}
-
-// memove：拷贝重叠
-//void* my_memmove(void* dest, const void* src, size_t num) {
-//	void* ret = dest;
-//	assert(dest && src);
-//	if (dest < src) {
-//		// 前 -> 后
-//		while (num--) {
-//			*(char*)dest = *(char*)src;
-//			dest = (char*)dest + 1;
-//			src = (char*)src + 1;
-//		}
+//	int ret = check_sys();
+//	if (1 == ret) {
+//		printf("小端\n");
 //	}
 //	else {
-//		//后 -> 前
-//		while (num--) {
-//			*((char*)dest + num) = *((char*)src + num);
-//		}
+//		printf("大端\n");
 //	}
-//	return ret;
+//	return 0;
 //}
-//
-//void test1()
+
+// malloc的用法
+//int main()
 //{
-//	int arr1[] = { 1,2,3,4,5,6,7,8,9,10 };
-//	// 把 arr1 里面的 前 5 个元素放到 3 4 5 6 7的位置
-//	my_memmove(arr1 + 3, arr1, 20);
-//	//1 2 1 2 3 4 5 8 9 10
+//	//开辟10个整型的空间
+//	int* p = (int*)malloc(40);
+//	if (NULL == p) {
+//		printf("%s\n", strerror(errno));
+//		return 0;
+//	}
+//
+//	//使用
 //	int i = 0;
-//	for (i = 0; i < 10; i++) {
-//		printf("%d ", arr1[i]);
+//	for (i = 0; i < 10; ++i) {
+//		*(p + i) = i;
 //	}
-//}
+//	for (i = 0; i < 10; ++i) {
+//		printf("%d ", *(p + i));
+//	}
 //
-//int main()
-//{
-//	test1();
+//	//释放
+//	free(p);
+//	p = NULL;//释放完以后，把p置为空指针
 //	return 0;
 //}
 
 
-
-
-//memcmp：比较
+//calloc的用法
 //int main()
 //{
-//	int arr1[] = { 1,2,3,4,5 };
-//	int arr2[] = { 1,2,3,4,5 };
-//	int ret = memcmp(arr1, arr2, 9);
+//	//开辟10个整型的空间，并且初始化为0
+//	int* p = (int*)calloc(10, sizeof(int));
+//	if (NULL == p) {
+//		printf("%s\n", strerror(errno));
+//		return 0;
+//	}
 //
-//	printf("%d\n", ret);
+//	//使用
+//	int i = 0;
+//	for (i = 0; i < 10; ++i) {
+//		printf("%d ", *(p + i));
+//	}
+//
+//	//释放
+//	free(p);
+//	p = NULL;//释放完以后，把p置为空指针
 //	return 0;
 //}
 
-//memset：设置内存(以字节为单位来设置的)
+//realloc的用法：
+//1. 可以开辟空间
+//2. 也可以调整空间
 int main()
 {
-	char str[20] = { 0 };
-	memset(str, 'x', 10);
+	//开辟10个整型的空间，并且初始化为0
+	int* p = (int*)calloc(10, sizeof(int));
+	if (NULL == p) {
+		printf("%s\n", strerror(errno));
+		return 0;
+	}
+
+	//使用
+	int i = 0;
+	for (i = 0; i < 10; ++i) {
+		printf("%d ", *(p + i));
+	}
+
+	//空间不够，使用realloc增加容量
+	//防止增容的东西变为空指针，所以先赋给ptr
+	//然后再判断ptr是不是为空
+	int* ptr = (void*)realloc(p, 80);
+	if (NULL != ptr) {
+		p = ptr;
+		ptr = NULL;
+	}
+
+	//释放
+	free(p);
+	p = NULL;//释放完以后，把p置为空指针
 	return 0;
 }
